@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <ImageView
+            android:id="@+id/mVideoIv"
+            android:layout_width="match_parent"
+            android:layout_height="220dp" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/colorwhite">
+            <ImageView
+                android:id="@+id/mHeaderIv"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="8dp"/>
+            <RelativeLayout
+                android:layout_toRightOf="@+id/mHeaderIv"
+                android:layout_toLeftOf="@+id/mTagTv"
+                android:layout_centerVertical="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/mTitleTv"
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp" />
+                <TextView
+                    android:id="@+id/mDescribeTv"
+                    android:layout_below="@+id/mTitleTv"
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp" />
+
+            </RelativeLayout>
+            <TextView
+                android:id="@+id/mTagTv"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginRight="8dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:text="预告"/>
+        </RelativeLayout>
+    </LinearLayout>
+    <RelativeLayout
+        android:id="@+id/mIndifferentRl"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="200dp">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="220dp">
+        <ImageView
+            android:visibility="gone"
+            android:id="@+id/mHeartBrokenIv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/ic_heart_broken"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"/>
+    </RelativeLayout>
+</RelativeLayout>

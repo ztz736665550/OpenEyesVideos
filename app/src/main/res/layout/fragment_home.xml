@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.example.multiple_status_view.MultipleStatusView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/mMultipleStatusView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:loadingView="@layout/loading_view"
+    app:emptyView="@layout/empty_view"
+    app:errorView="@layout/error_view"
+    app:noNetworkView="@layout/no_network_view">
+
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:id="@+id/mRefreshLayoutHm"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/mRecyclerviewHm"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </android.support.v7.widget.RecyclerView>
+
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+    <!--<include
+        android:id="@+id/mTitleHome"
+        layout="@layout/titel_bar"/>-->
+    <ImageView
+        android:id="@+id/mTitleHome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/ic_searchhome"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="25dp"
+        android:layout_marginRight="15dp"/>
+</com.example.multiple_status_view.MultipleStatusView>
